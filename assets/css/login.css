@@ -171,3 +171,17 @@ a {
 .hv-text:hover {
   text-decoration: underline !important;
 }
+
+.colored-toast.swal2-icon-error {
+  background-color: #f27474 !important;
+}
+.swal2-title {
+  color: #fff !important;
+}
+
+.swal2-timer-progress-bar {
+  background-color: #fff !important;
+}
+.colored-toast.swal2-icon-success {
+  background-color: #a5dc86 !important;
+}

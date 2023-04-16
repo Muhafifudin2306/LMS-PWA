@@ -72,7 +72,7 @@ function logOutFunction() {
       Swal.fire("Logout Sukses!", "Anda telah keluar", "success").then(
         (result) => {
           if (result.isConfirmed) {
-            window.location = "login.html";
+            window.location = "index.html";
           }
         }
       );

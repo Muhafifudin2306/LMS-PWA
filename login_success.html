@@ -21,47 +21,45 @@
 
     <!--=============== JQuery CDN ================= -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <!-- =============== External CSS ================= -->
     <link rel="stylesheet" href="./assets/css/login.css">
-
     <!--=============== Sweet Alert CDN ================= -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <!--=============== AOS CDN ================= -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="successRegist()">
     <div class="d-flex responsive-form">
         <div class="side-left w-50 m-full">
 
-            <div class="login_field">
+            <div class="login_field" onclick="successLogin()">
                 <div class="auth-form">
                     <h2 class="text-center pt-5 pb-4 ft-7">Masuk Akun</h2>
-                    <form class="login">
+                    <form class="login" action="dashboard.html">
                         <div class="login__field">
                             <i class="bx bx-user login__icon"></i>
-                            <input type="text" class="login__input" placeholder="example@example.com">
+                            <input type="text" class="login__input" placeholder="example@example.com" required>
                         </div>
                         <div class="login__field">
                             <i class="bx bx-lock login__icon"></i>
                             <input id="passwordInput" type="password" name="password input" class="login__input"
-                                placeholder="*********">
+                                placeholder="*********" required>
                         </div>
                         <div class="my-2 mx-1 form-check">
                             <input onclick="showPassword()" type="checkbox" class="form-check-input">
-                            <label class="form-check-label">Tampilkan Kata Sandi</label>
+                            <label class="form-check-label">Tampilkan Kata
+                                Sandi</label>
                         </div>
                         <div class="p-2">
-                            <button class="btn btn-primary bg-first w-100 ft-7"> Masuk Sekarang </button>
+                            <button type="submit" class="btn
+                                    btn-primary bg-first w-100 ft-7"> Masuk
+                                Sekarang
+                            </button>
                         </div>
-
-                        <p class="text-center pt-2">Belum punya akun? <a class="text-first hv-text"
-                                href="register.html">
-                                Daftar sekarang</a> </p>
-
                     </form>
+                    <p class="text-center pt-2">Belum punya akun? <a class="text-first hv-text" href="register.html">
+                            Daftar sekarang</a> </p>
                 </div>
 
             </div>
@@ -83,12 +81,28 @@
     <!--=============== External JS ===============-->
     <script type="text/javascript" src="./script.js"></script>
     <script type="text/javascript" src="./search.js"></script>
-
-
     <!--=============== AOS JS ===============-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        function successRegist() {
+            Swal.fire({
+                toast: true,
+                position: 'top-right',
+                iconColor: 'white',
+                customClass: {
+                    popup: 'colored-toast'
+                },
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                icon: 'success',
+                title: 'Registrasi Sukses Sukses'
+            })
+        }
+
     </script>
 </body>
 
