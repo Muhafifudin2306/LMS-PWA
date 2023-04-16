@@ -746,16 +746,25 @@ footer {
   width: 75%;
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (min-width: 500px) and (max-width: 992px) {
+  .wd-25 {
+    display: 50% !important;
+  }
+  .wd-75 {
+    width: 50% !important;
+  }
+
+  .card-xxl {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .wd-25 {
     display: none;
   }
   .wd-75 {
     width: 100%;
-  }
-
-  .card-xxl {
-    width: 50%;
   }
 }
 

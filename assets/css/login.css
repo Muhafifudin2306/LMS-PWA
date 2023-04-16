@@ -34,18 +34,38 @@ a {
 }
 
 .image-panel img {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100vh;
   object-fit: cover;
 }
 
 .panel-cover {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: 100vh;
   background-color: var(--first-color);
   margin-top: -100vh;
-  opacity: 0.6;
+  opacity: 0.75;
 }
+.logo-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin-top: -100vh;
+}
+
+.logo-panel img {
+  opacity: 0.9;
+  width: 50%;
+  position: relative;
+  z-index: 3;
+}
+
 .login_field {
   padding: 100px 150px 100px 150px;
   height: 100vh;
@@ -92,9 +112,8 @@ a {
 
 .bg-first:focus,
 .bg-first:hover {
-  background-color: #fff;
+  background-color: #0f1036;
   border: 1px solid var(--first-color);
-  color: var(--first-color);
 }
 
 .text-first {
@@ -106,12 +125,49 @@ a {
   .m-full {
     width: 100% !important;
   }
-
+  .m-md-full {
+    height: 10vh;
+    width: 100% !important;
+  }
+  .image-panel img {
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+  }
+  /* 
   .m-none {
     display: none;
+  } */
+
+  .login_field {
+    padding: 80px 30px 30px 30px !important;
+  }
+
+  .responsive-form {
+    flex-direction: column-reverse;
   }
 
   .login_field {
-    padding: 100px 30px 30px 30px !important;
+    height: 75vh;
   }
+
+  .logo-panel {
+    margin-top: -58vh;
+  }
+  .logo-panel img {
+    width: 30%;
+  }
+}
+
+.ft-7 {
+  font-weight: 700;
+}
+
+.form-check-input:checked {
+  background-color: var(--first-color);
+  border-color: var(--first-color);
+}
+
+.hv-text:hover {
+  text-decoration: underline !important;
 }

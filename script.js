@@ -146,3 +146,14 @@ function openCity(cityName) {
   document.getElementById(cityName + "1").style.borderBottom =
     "2px solid #2c2f75";
 }
+
+//Show Password
+function showPassword() {
+  let x = document.getElementById("passwordInput");
+
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
