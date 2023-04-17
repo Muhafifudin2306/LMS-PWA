@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/plain_icon.png">
     <title>
         Kelas Tersedia
     </title>
@@ -65,7 +66,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">
+                        <a href="dashboard.html" class="nav__link">
                             <i class="bx bx-home-alt nav__icon"></i>
                         </a>
                     </li>
@@ -94,12 +95,12 @@
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
             <div>
-                <a href="index.html" class="nav_logo">
+                <a href="dashboard.html" class="nav_logo">
                     <img src="./assets/img/plain_icon.png" alt="">
                     <span class="nav_logo-name">NaZMalogy</span>
                 </a>
                 <div class="nav_list">
-                    <a href="index.html" class="nav_link">
+                    <a href="dashboard.html" class="nav_link">
                         <i class="bx bx-grid-alt nav_icon"></i>
                         <span class="nav_name">Dashboard</span>
                     </a>
@@ -124,108 +125,21 @@
     <!--=============== Course Content ===============-->
     <div class="space-top">
 
-
-        <!-- =============== Kelas Berjalan ================= -->
-        <section id="gallery">
-            <div class="d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="500">
-                <h3 class="ft-7">Kelas Berjalan</h3>
-                <div class="button-gallery d-flex gap-2 ">
-                    <i id="left__gallery" onclick="slide__left()" class="bx bx-chevron-left btn-gallery"></i>
-                    <i id="right__gallery" onclick="slide__right()" class="bx bx-chevron-right btn-gallery"></i>
-                </div>
-            </div>
-            <div id="gallery__course" class="d-inline-flex" data-aos="fade-up" data-aos-duration="800">
-                <div class="gallery-card-lg">
-                    <div class="card-area">
-                        <div class="card-gallery">
-                            <div class="d-flex flex-column">
-                                <div class="course-image">
-                                    <img src="./assets/img/class_album.jpg" alt="">
-                                    <div class="marker"></div>
-                                </div>
-                                <div class="course-title">
-                                    <h5 class="ft-7 p-2 text-center">Digital Marketing Untuk UMKM</h5>
-                                </div>
-                                <div class="course-progress">
-                                    <div class="progress" role="progressbar" aria-label="Example with label"
-                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar" style="width: 25%">25%</div>
-                                    </div>
-                                </div>
-                                <div class="course-detail">
-                                    <button class="btn btn-danger bg-yellow w-100">Detail Kelas</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-card-lg">
-                    <div class="card-area">
-                        <div class="card-gallery">
-                            <div class="d-flex flex-column">
-                                <div class="course-image">
-                                    <img src="./assets/img/class_album.jpg" alt="">
-                                    <div class="marker"></div>
-                                </div>
-                                <div class="course-title">
-                                    <h5 class="ft-7 p-2 text-center">Digital Marketing Untuk Usama Kecil Men..</h5>
-                                </div>
-                                <div class="course-progress">
-                                    <div class="progress" role="progressbar" aria-label="Example with label"
-                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar" style="width: 50%">50%</div>
-                                    </div>
-                                </div>
-                                <div class="course-detail">
-                                    <button class="btn btn-danger bg-yellow w-100">Detail Kelas</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-card-lg">
-                    <div class="card-area">
-                        <div class="card-gallery">
-                            <div class="d-flex flex-column">
-                                <div class="course-image">
-                                    <img src="./assets/img/class_album.jpg" alt="">
-                                    <div class="marker"></div>
-                                </div>
-                                <div class="course-title">
-                                    <h5 class="ft-7 p-2 text-center">Digital Marketing Untuk UMKM</h5>
-                                </div>
-                                <div class="course-progress">
-                                    <div class="progress" role="progressbar" aria-label="Example with label"
-                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar" style="width: 75%">75%</div>
-                                    </div>
-                                </div>
-                                <div class="course-detail">
-                                    <button class="btn btn-danger bg-yellow w-100">Detail Kelas</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
         <!-- =============== Kelas Tersedia ================= -->
         <div class="mt-5 mb-1 p-2 d-flex justify-content-lg-start" data-aos="fade-up" data-aos-duration="700">
-            <h3 class="ft-7">Kelas Tersedia</h3>
+            <h5 class="ft-7">Kelas Tersedia</h5>
         </div>
 
 
         <!-- Top Menu -->
-        <div class="d-flex" data-aos="fade-up" data-aos-duration="700">
+        <div class="d-flex btn-filter" data-aos="fade-up" data-aos-duration="700">
             <div class="filter-panel card-lg">
             </div>
             <div class="search-panel card-xxl p-side">
                 <div class="d-flex m-js">
                     <button class="mx-2 pc-none btn btn-outline-secondary" type="button" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
-                        <i class="bx bx-filter"></i>
+                        Filter <i class="bx bx-filter"></i>
                     </button>
                 </div>
             </div>
@@ -348,7 +262,7 @@
                                                 </div>
                                             </div>
                                             <div class="detail-bottom">
-                                                <button class="btn btn-primary bg-first text-xl">Detail kelas</button>
+                                                <button class="btn btn-primary bg-first text-xl">+ Ikuti</button>
                                             </div>
                                         </div>
                                     </div>
@@ -390,7 +304,7 @@
 
 
                                             <div class="detail-bottom">
-                                                <button class="btn btn-primary bg-first text-xl">Detail kelas</button>
+                                                <button class="btn btn-primary bg-first text-xl">+ Ikuti</button>
                                             </div>
                                         </div>
                                     </div>
@@ -432,7 +346,7 @@
 
 
                                             <div class="detail-bottom">
-                                                <button class="btn btn-primary bg-first text-xl">Detail kelas</button>
+                                                <button class="btn btn-primary bg-first text-xl">+ Ikuti</button>
                                             </div>
                                         </div>
                                     </div>
@@ -474,7 +388,7 @@
 
 
                                             <div class="detail-bottom">
-                                                <button class="btn btn-primary bg-first text-xl">Detail kelas</button>
+                                                <button class="btn btn-primary bg-first text-xl">+ Ikuti</button>
                                             </div>
                                         </div>
                                     </div>
@@ -516,7 +430,7 @@
 
 
                                             <div class="detail-bottom">
-                                                <button class="btn btn-primary bg-first text-xl">Detail kelas</button>
+                                                <button class="btn btn-primary bg-first text-xl">+ Ikuti</button>
                                             </div>
                                         </div>
                                     </div>
@@ -558,7 +472,7 @@
 
 
                                             <div class="detail-bottom">
-                                                <button class="btn btn-primary bg-first text-xl">Detail kelas</button>
+                                                <button class="btn btn-primary bg-first text-xl">+ Ikuti</button>
                                             </div>
                                         </div>
                                     </div>
@@ -600,7 +514,7 @@
 
 
                                             <div class="detail-bottom">
-                                                <button class="btn btn-primary bg-first text-xl">Detail kelas</button>
+                                                <button class="btn btn-primary bg-first text-xl">+ Ikuti</button>
                                             </div>
                                         </div>
                                     </div>
@@ -642,7 +556,7 @@
 
 
                                             <div class="detail-bottom">
-                                                <button class="btn btn-primary bg-first text-xl">Detail kelas</button>
+                                                <button class="btn btn-primary bg-first text-xl">+ Ikuti</button>
                                             </div>
                                         </div>
                                     </div>
@@ -670,7 +584,7 @@
     <!-- Mobile Filter -->
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center align-items-center">
             <div class="modal-content">
                 <div class="p-5">
                     <div class="search-box">

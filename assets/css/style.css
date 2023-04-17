@@ -114,7 +114,7 @@ a {
   font-size: 1.25rem;
 }
 
-.show {
+.shows {
   left: 0;
 }
 
@@ -155,7 +155,7 @@ a {
     padding: 1rem 1rem 0 0;
   }
 
-  .show {
+  .shows {
     width: calc(var(--nav-width) + 156px);
   }
 
@@ -751,34 +751,30 @@ footer {
   width: 75%;
 }
 
-@media screen and (min-width: 500px) and (max-width: 992px) {
-  .wd-25 {
-    display: 50% !important;
+@media screen and (min-width: 992px) {
+  .btn-filter {
+    display: none !important;
   }
-  .wd-75 {
-    width: 50% !important;
-  }
-
   .card-xxl {
     width: 50%;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 992px) {
   .wd-25 {
     display: none;
   }
   .wd-75 {
     width: 100%;
   }
+  .m-js {
+    justify-content: flex-end !important;
+  }
 }
 
 @media screen and (max-width: 762px) {
   .m-none {
     display: none;
-  }
-  .m-js {
-    justify-content: flex-end !important;
   }
 }
 
@@ -1180,4 +1176,9 @@ body #gallery {
 .splide__pagination {
   position: relative !important;
   padding: 2rem !important;
+}
+
+/* List Style */
+.modal-content {
+  width: 400px !important;
 }
