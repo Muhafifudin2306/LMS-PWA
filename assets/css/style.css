@@ -832,7 +832,7 @@ body #gallery {
   height: 200px;
   width: 100%;
   background-color: rgb(0, 0, 0);
-  opacity: 40%;
+  opacity: 30%;
   border-radius: 5px 5px 0 0;
 }
 .card-gallery .course-image img {
@@ -1162,4 +1162,22 @@ body #gallery {
   margin-bottom: auto;
   color: rgb(189, 189, 189);
   pointer-events: none;
+}
+
+/* Dashboard Pagination */
+/* Add numbers to pagination buttons by CSS .splide__pagination {
+  counter-reset: pagination-num;
+}
+
+.splide__pagination__page:before {
+  counter-increment: pagination-num;
+  content: counter(pagination-num);
+} */
+.splide__pagination__page.is-active {
+  background-color: var(--first-color) !important;
+}
+
+.splide__pagination {
+  position: relative !important;
+  padding: 2rem !important;
 }

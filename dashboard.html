@@ -31,6 +31,9 @@
 
     <!--=============== AOS CDN ================= -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ============== Splide CSS ================= -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 
 <body id="body-pd">
@@ -192,77 +195,75 @@
                 </div>
             </div>
         </div>
-        <div class="mt-5 mb-1 p-2 d-flex justify-content-lg-start" data-aos="fade-right" data-aos-duration="1000">
-            <h5 class="ft-7 d-flex align-items-center">Aktivitas Pengguna</h5>
-            <a href="list_class.html"><button class="mx-3 btn btn-warning bg-yellow">Detail <i
-                        class="bx bx-right-arrow-alt"></i></button></a>
-        </div>
-        <div class="d-flex card-groups">
-            <div class="card-xl">
-                <div class="card-area">
-                    <div class="blog-card" data-aos="fade-right" data-aos-duration="1200">
-                        <div class="meta">
-                            <div class="photo" style="background-image: url(./assets/img/course-1.png)">
-                            </div>
-                            <ul class="details">
-                                <li class="instruktur"><i class="bx bx-user-check"></i> Nama Instruktur</li>
-                                <li class="tanggal mulai"><i class="bx bx-time"></i> 8 April 2023</li>
-                                <li class="progres"><i class="bx bx-run"></i> 35%</li>
-                            </ul>
-                        </div>
-                        <div class="description">
-                            <div class="ft-7 mt-3">
-                                <a href="detail_class.html">Go Digital - Memahami Corong Pemasaran</a>
-                            </div>
 
-                            <p class="text-lg"> Srategi atau langkah efektif dalam meningkatkan omzet usaha, serta
-                                penerapan model corong AIDA (Awareness, Interest..
-                            </p>
-                            <p class="read-more">
-                                <a href="detail_class.html">
-                                    <button class="w-100 btn btn-warning bg-yellow">Detail Kelas<i
-                                            class="bx bx-right-arrow-alt"></i></button>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
+
+        <!-- =============== Kelas Berjalan ================= -->
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="py-4" data-aos="fade-up" data-aos-duration="500">
+                <h5 class="ft-7">Kelas Berjalan</h5>
 
             </div>
-            <div class="card-xl">
-                <div class="card-area">
-                    <div class="blog-card" data-aos="fade-right" data-aos-duration="1500">
-                        <div class="meta">
-                            <div class="photo" style="background-image: url(./assets/img/course-2.png)">
+            <div class="splide__track" data-aos="fade-up" data-aos-duration="500">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="gallery-card-lg">
+                            <div class="card-area">
+                                <div class="card-gallery">
+                                    <div class="d-flex flex-column">
+                                        <div class="course-image">
+                                            <img src="./assets/img/course-2.png" alt="">
+                                            <div class="marker"></div>
+                                        </div>
+                                        <div class="course-title">
+                                            <h5 class="ft-7 p-2 text-center">Membangun Ketangguhan Bisnis dengan
+                                                Diversifikasi Inovasi Produk</h5>
+                                        </div>
+                                        <div class="course-progress">
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 100%">100%</div>
+                                            </div>
+                                        </div>
+                                        <div class="course-detail">
+                                            <button class="btn btn-danger bg-yellow w-100 ft-7">Lanjutkan Kelas</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <ul class="details">
-                                <li class="instruktur"><i class="bx bx-user-check"></i> Nama Instruktur</li>
-                                <li class="tanggal mulai"><i class="bx bx-time"></i> 8 April 2023</li>
-                                <li class="progres"><i class="bx bx-run"></i> 100%</li>
-                            </ul>
                         </div>
-                        <div class="description">
-                            <div class="ft-7 mt-3">
-                                <a href="detail_class.html">Membangun Ketangguhan Bisnis dengan Diversifika.. </a>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="gallery-card-lg">
+                            <div class="card-area">
+                                <div class="card-gallery">
+                                    <div class="d-flex flex-column">
+                                        <div class="course-image">
+                                            <img src="./assets/img/course-1.png" alt="">
+                                            <div class="marker"></div>
+                                        </div>
+                                        <div class="course-title">
+                                            <h5 class="ft-7 p-2 text-center"> Go Digital - Memahami Corong Pemasaran
+                                            </h5>
+                                        </div>
+                                        <div class="course-progress">
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 25%">25%</div>
+                                            </div>
+                                        </div>
+                                        <div class="course-detail">
+                                            <button class="btn btn-danger bg-yellow w-100 ft-7">Lanjutkan Kelas</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
-                            <p class="text-lg"> mengetahui jenis-jenis risiko bisnis dan langkah antisipasinya, memahami
-                                strategi diversifikasi se..
-                            </p>
-                            <p class="read-more">
-                                <a href="detail_class.html">
-                                    <button class="w-100 btn btn-warning bg-yellow">Detail Kelas<i
-                                            class="bx bx-right-arrow-alt"></i></button>
-                                </a>
-                            </p>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </section>
     </div>
-
-
     <!--=============== Footer Tab and Desktop ===============-->
     <footer class="p-0">
         <div class="d-flex justify-content-center">
@@ -274,12 +275,45 @@
     <!--=============== External JS ===============-->
     <script type="text/javascript" src="./script.js"></script>
     <script type="text/javascript" src="./search.js"></script>
+    <script type="text/javascript" src="./class.js"></script>
 
 
     <!--=============== AOS JS ===============-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <!-- ============== Splide Js =============== -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        var widths = [0, 992, 2000];
+
+        function resizeFn() {
+            if (window.innerWidth >= widths[0] && window.innerWidth < widths[1]) {
+                var splide = new Splide('.splide', {
+                    type: 'loop',
+                    padding: '2rem',
+                });
+
+                splide.mount();
+            } else if (window.innerWidth >= widths[1] && window.innerWidth < widths[2]) {
+                var splide = new Splide('.splide', {
+                    type: 'loop',
+                    padding: '20rem',
+                });
+
+                splide.mount();
+            } else {
+                var splide = new Splide('.splide', {
+                    type: 'loop',
+                    padding: '25rem',
+                });
+
+                splide.mount();
+            }
+        }
+        window.onresize = resizeFn;
+        resizeFn();
     </script>
 </body>
 
