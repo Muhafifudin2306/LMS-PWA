@@ -25,7 +25,6 @@
     <!--=============== External CSS ================= -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/search.css">
-    <link rel="stylesheet" href="./assets/css/progressjs.css">
 
     <!--=============== Sweet Alert CDN ================= -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -88,7 +87,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link active-link">
+                        <a href="dashboard.html" class="nav__link active-link">
                             <i class="bx bx-home-alt nav__icon"></i>
                         </a>
                     </li>
@@ -117,12 +116,12 @@
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
             <div>
-                <a href="index.html" class="nav_logo">
+                <a href="dashboard.html" class="nav_logo">
                     <img src="./assets/img/plain_icon.png" alt="">
                     <span class="nav_logo-name ft-7">NAZMALOGY</span>
                 </a>
                 <div class="nav_list">
-                    <a href="index.html" class="nav_link active">
+                    <a href="dashboard.html" class="nav_link active">
                         <i class="bx bx-grid-alt nav_icon"></i>
                         <span class="nav_name">Dashboard</span>
                     </a>
@@ -146,19 +145,8 @@
 
     <!--=============== Dashboard Content ===============-->
     <div class="space-top">
-        <h4 class="ft-7 mb-3 p-2" data-aos="fade-right" data-aos-duration="300">Dashboard Pengguna</h4>
+        <h5 class="ft-7 mb-3 p-2" data-aos="fade-right" data-aos-duration="300">Dashboard Pengguna</h5>
         <div class="d-flex card-groups">
-            <div class="card-xl">
-                <div class="card-area">
-                    <div class="card-body" data-aos="fade-right" data-aos-duration="700">
-                        <div class="mt-2 image-card d-flex justify-content-center">
-                            <i class="bx bx-star bx-tada stat-image blue-image"></i>
-                        </div>
-                        <h3 class="title-card ft-7">Selamat Datang</h3>
-                        <h6 class="title-card">Muhammad Afifudin</h6>
-                    </div>
-                </div>
-            </div>
             <div class="card-lg">
                 <div class="card-area">
                     <div class="card-body" data-aos="fade-right" data-aos-duration="700">
@@ -174,16 +162,38 @@
                 <div class="card-area">
                     <div class="card-body" data-aos="fade-right" data-aos-duration="900">
                         <div class="mt-2 image-card d-flex justify-content-center">
+                            <i class="bx bx-card bx-tada stat-image blue-image"></i>
+                        </div>
+                        <h2 class="title-card ft-7">1</h2>
+                        <h6 class="title-card">Sertifikat</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="card-lg">
+                <div class="card-area">
+                    <div class="card-body" data-aos="fade-right" data-aos-duration="900">
+                        <div class="mt-2 image-card d-flex justify-content-center">
+                            <i class="bx bxs-hot bx-tada stat-image red-image"></i>
+                        </div>
+                        <h2 class="title-card ft-7">200</h2>
+                        <h6 class="title-card">Poin Saya</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="card-lg">
+                <div class="card-area">
+                    <div class="card-body" data-aos="fade-right" data-aos-duration="900">
+                        <div class="mt-2 image-card d-flex justify-content-center">
                             <i class="bx bx-medal bx-tada stat-image yellow-image"></i>
                         </div>
                         <h2 class="title-card ft-7">1</h2>
-                        <h6 class="title-card">Kelas Selesai</h6>
+                        <h6 class="title-card">Pencapaian</h6>
                     </div>
                 </div>
             </div>
         </div>
         <div class="mt-5 mb-1 p-2 d-flex justify-content-lg-start" data-aos="fade-right" data-aos-duration="1000">
-            <h4 class="ft-7 d-flex align-items-center">Aktivitas Pengguna</h4>
+            <h5 class="ft-7 d-flex align-items-center">Aktivitas Pengguna</h5>
             <a href="list_class.html"><button class="mx-3 btn btn-warning bg-yellow">Detail <i
                         class="bx bx-right-arrow-alt"></i></button></a>
         </div>
@@ -192,25 +202,25 @@
                 <div class="card-area">
                     <div class="blog-card" data-aos="fade-right" data-aos-duration="1200">
                         <div class="meta">
-                            <div class="photo"
-                                style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)">
+                            <div class="photo" style="background-image: url(./assets/img/course-1.png)">
                             </div>
                             <ul class="details">
                                 <li class="instruktur"><i class="bx bx-user-check"></i> Nama Instruktur</li>
                                 <li class="tanggal mulai"><i class="bx bx-time"></i> 8 April 2023</li>
-                                <li class="progres"><i class="bx bx-run"></i> 90%</li>
+                                <li class="progres"><i class="bx bx-run"></i> 35%</li>
                             </ul>
                         </div>
                         <div class="description">
                             <div class="ft-7 mt-3">
-                                <a href="detail_class.html">Digital Marketing Untuk UMKM </a>
+                                <a href="detail_class.html">Go Digital - Memahami Corong Pemasaran</a>
                             </div>
 
-                            <p> Belajar ilmu-ilmu dasar digital marketing dan aplikasi untuk memudahkannya.
+                            <p class="text-lg"> Srategi atau langkah efektif dalam meningkatkan omzet usaha, serta
+                                penerapan model corong AIDA (Awareness, Interest..
                             </p>
                             <p class="read-more">
                                 <a href="detail_class.html">
-                                    <button class="mx-3 btn btn-warning bg-yellow">Detail Kelas<i
+                                    <button class="w-100 btn btn-warning bg-yellow">Detail Kelas<i
                                             class="bx bx-right-arrow-alt"></i></button>
                                 </a>
                             </p>
@@ -223,25 +233,25 @@
                 <div class="card-area">
                     <div class="blog-card" data-aos="fade-right" data-aos-duration="1500">
                         <div class="meta">
-                            <div class="photo"
-                                style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)">
+                            <div class="photo" style="background-image: url(./assets/img/course-2.png)">
                             </div>
                             <ul class="details">
                                 <li class="instruktur"><i class="bx bx-user-check"></i> Nama Instruktur</li>
                                 <li class="tanggal mulai"><i class="bx bx-time"></i> 8 April 2023</li>
-                                <li class="progres"><i class="bx bx-run"></i> 90%</li>
+                                <li class="progres"><i class="bx bx-run"></i> 100%</li>
                             </ul>
                         </div>
                         <div class="description">
                             <div class="ft-7 mt-3">
-                                <a href="detail_class.html">Creative Business</a>
+                                <a href="detail_class.html">Membangun Ketangguhan Bisnis dengan Diversifika.. </a>
                             </div>
 
-                            <p> Belajar Bisnis berbasis kreatifitas .
+                            <p class="text-lg"> mengetahui jenis-jenis risiko bisnis dan langkah antisipasinya, memahami
+                                strategi diversifikasi se..
                             </p>
                             <p class="read-more">
                                 <a href="detail_class.html">
-                                    <button class="mx-3 btn btn-warning bg-yellow">Detail Kelas<i
+                                    <button class="w-100 btn btn-warning bg-yellow">Detail Kelas<i
                                             class="bx bx-right-arrow-alt"></i></button>
                                 </a>
                             </p>

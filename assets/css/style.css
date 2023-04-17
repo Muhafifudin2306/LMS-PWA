@@ -506,6 +506,11 @@ a {
   color: rgb(255, 174, 0);
 }
 
+.red-image {
+  background-color: rgb(255, 189, 200);
+  color: rgb(245, 14, 53);
+}
+
 .blue-image {
   background-color: lightblue;
   color: rgb(56, 56, 255);
