@@ -86,11 +86,17 @@ function likeFunction(clicked_id) {
     "position-absolute bx bxs-bookmark like_icon";
   document.getElementById(clicked_id).id = ++clicked_id;
   Swal.fire({
-    position: "top-end",
-    icon: "success",
-    title: "Kelas telah Tersimpan",
+    toast: true,
+    position: "top-right",
+    iconColor: "white",
+    customClass: {
+      popup: "colored-toast",
+    },
     showConfirmButton: false,
-    timer: 1000,
+    timer: 1500,
+    timerProgressBar: true,
+    icon: "success",
+    title: "Kelas Tersimpan",
   });
 
   document
@@ -103,11 +109,17 @@ function likedFunction(clicked_id) {
     "position-absolute bx bx-bookmark like_icon";
   document.getElementById(clicked_id).id = --clicked_id;
   Swal.fire({
-    position: "top-end",
-    icon: "success",
-    title: "Kelas telah Terhapus",
+    toast: true,
+    position: "top-right",
+    iconColor: "white",
+    customClass: {
+      popup: "colored-toast",
+    },
     showConfirmButton: false,
-    timer: 1000,
+    timer: 1500,
+    timerProgressBar: true,
+    icon: "info",
+    title: "Kelas Dihapus dari Wishlist",
   });
   document
     .getElementById(clicked_id)

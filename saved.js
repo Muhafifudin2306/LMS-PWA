@@ -3,11 +3,17 @@ function unlikeFunction(clicked_id) {
   document.getElementById(clicked_id).className =
     "position-absolute bx bx-bookmark like_icon";
   Swal.fire({
-    position: "top-end",
-    icon: "success",
-    title: "Kelas telah Terhapus",
+    toast: true,
+    position: "top-right",
+    iconColor: "white",
+    customClass: {
+      popup: "colored-toast",
+    },
     showConfirmButton: false,
-    timer: 1000,
+    timer: 1500,
+    timerProgressBar: true,
+    icon: "info",
+    title: "Kelas Dihapus dari Wishlist",
   });
 
   document.getElementById(clicked_id - 1).remove();
