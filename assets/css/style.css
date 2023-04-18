@@ -952,11 +952,11 @@ body #gallery {
   border-radius: 10px;
 }
 
-.personal__information .info__card__head {
+.info__card__head {
   height: 80px;
   width: 100%;
   border-radius: 10px 10px 0px 0px;
-  background-color: var(--white-color);
+  background-color: #dfdfdf;
 }
 
 .personal-info-table .form-label {
@@ -1201,4 +1201,51 @@ body #gallery {
 
 .colored-toast.swal2-icon-info {
   background-color: #3fc3ee !important;
+}
+
+/* Profile */
+.li-award {
+  overflow-x: scroll;
+}
+
+.li-award .icon-award {
+  width: 10%;
+  text-align: center;
+}
+
+.li-award .title-award {
+  width: 65%;
+}
+
+.li-award .date-award {
+  width: 20%;
+  text-align: center;
+}
+
+.li-award .action-award {
+  width: 15%;
+  text-align: center;
+}
+
+.li-award .action-award a span {
+  color: #000;
+}
+
+.li-award .action-award a span:hover {
+  text-decoration: underline;
+}
+
+.title-poin {
+  width: 80%;
+}
+
+.number-poin {
+  width: 20%;
+}
+
+.detail-poin span {
+  text-decoration: underline;
+  color: var(--first-color);
+  letter-spacing: 1px;
+  text-align: center;
 }
