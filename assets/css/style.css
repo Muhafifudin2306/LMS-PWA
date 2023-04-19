@@ -851,7 +851,7 @@ body #gallery {
   height: 60px;
 }
 
-.card-gallery .course-progress .progress-bar {
+.progress-bar {
   background-color: var(--first-color);
 }
 
